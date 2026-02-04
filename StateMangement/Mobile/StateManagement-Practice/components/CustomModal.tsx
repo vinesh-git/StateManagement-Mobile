@@ -41,6 +41,11 @@ const CustomModal = ({ item, showModal, setshowmodal }: ModalProps) => {
                     <TouchableOpacity style={{ backgroundColor: '#155f43ff', padding: 20, borderRadius: 30}} onPress={() =>{setshowmodal(false); return dispathcer(updateBook({ id: item.id, name: bookname, price :  price1, author : author1 }))}}>
                         <Text style={{ color: '#ffffff' ,alignSelf : 'center'}}>Save</Text>
                     </TouchableOpacity>
+                    
+                    <TouchableOpacity style={{ padding: 20, borderRadius: 30}} onPress={() =>{setshowmodal(false);}}>
+                        <Text style={{ color: '#5255ffff' ,alignSelf : 'center'}}>Cancel</Text>
+                    </TouchableOpacity>
+
                 </View>
             </View>
         </Modal>
